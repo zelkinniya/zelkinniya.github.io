@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ZEL Kinniya - Best Spoken English Academy in Kinniya"
+    />
+    <title>ZEL Kinniya - Learn English in Kinniya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      /* Very Dark Gradient Background */
+      body {
+        background: linear-gradient(to bottom, #0d0d0d, #000000);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="text-white">
+    <!-- Navbar -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Navbar Example</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+          /* Custom class for smooth max-height transition */
+          .transition-max-height {
+            transition: max-height 0.3s ease-out;
+          }
+        </style>
+      </head>
+      <body class="bg-gray-100">
+        <!-- Navigation -->
+        <nav
+          class="p-4 bg-gradient-to-br from-neutral-900 to-zinc-800 fixed w-full top-0 z-50"
+        >
+          <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+          >
+            <!-- Branding -->
+            <a href="#hero" class="flex items-center space-x-3">
+              <!-- You may include a logo image if needed -->
+              <!-- <img src="your-logo.png" class="h-8" alt="Logo" /> -->
+              <span class="self-center text-2xl font-semibold text-white"
+                >ZEL Kinniya</span
+              >
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+              id="mobile-menu-button"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-white rounded-lg md:hidden focus:outline-none"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul
+                class="font-medium flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0"
+              >
+                <li>
+                  <a
+                    href="#hero"
+                    class="block py-2 px-3 text-white hover:text-gray-300"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="block py-2 px-3 text-white hover:text-gray-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#courses"
+                    class="block py-2 px-3 text-white hover:text-gray-300"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="block py-2 px-3 text-white hover:text-gray-300"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="block py-2 px-3 text-white hover:text-gray-300"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mobile Menu (Dropdown) -->
+          <div
+            id="mobile-menu"
+            class="md:hidden overflow-hidden transition-max-height max-h-0"
+          >
+            <ul class="flex flex-col p-4 space-y-4">
+              <li>
+                <a
+                  href="#hero"
+                  class="block py-2 px-3 text-white hover:text-gray-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 px-3 text-white hover:text-gray-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#courses"
+                  class="block py-2 px-3 text-white hover:text-gray-300"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="block py-2 px-3 text-white hover:text-gray-300"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 px-3 text-white hover:text-gray-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- JavaScript to toggle mobile menu with smooth animation -->
+        <script>
+          const mobileMenuButton =
+            document.getElementById("mobile-menu-button");
+          const mobileMenu = document.getElementById("mobile-menu");
+
+          mobileMenuButton.addEventListener("click", function () {
+            // If mobileMenu is open (maxHeight not "0px"), close it; otherwise open it.
+            if (
+              mobileMenu.style.maxHeight &&
+              mobileMenu.style.maxHeight !== "0px"
+            ) {
+              mobileMenu.style.maxHeight = "0px";
+            } else {
+              mobileMenu.style.maxHeight = mobileMenu.scrollHeight + "px";
+            }
+          });
+        </script>
+      </body>
+    </html>
+
+    <!-- Hero Section -->
+    <header id="hero" class="pt-20 h-screen flex items-center text-center px-4">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold">
+            Speak English Confidently & Fluently!
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300">
+            Join our expert-led spoken English & grammar classes and improve
+            your skills in no time.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-semibold"
+          >
+            Contact Us
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="/assets/images/zelhome.jpg"
+            alt="Students learning"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">About Us</h2>
+        <p class="text-center text-gray-300 max-w-3xl mx-auto">
+          ZEL Kinniya is the leading spoken English academy in Kinniya. Our
+          mission is to empower you with the language skills you need to
+          succeed. With expert trainers, flexible class timings, and
+          personalized learning plans, we help you master English confidently
+          and effectively.
+        </p>
+      </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section
+      id="benefits"
+      class="py-16 bg-gradient-to-br from-neutral-900 to-zinc-900"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Benefit 1 -->
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-blue-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Expert Trainers</h3>
+              <p class="mt-1 text-gray-400">
+                Learn from professionals with years of experience.
+              </p>
+            </div>
+          </div>
+          <!-- Benefit 2 -->
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-blue-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Flexible Class Timings</h3>
+              <p class="mt-1 text-gray-400">
+                Schedule classes as per your convenience.
+              </p>
+            </div>
+          </div>
+          <!-- Benefit 3 -->
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-blue-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 20l9-5-9-5-9 5 9 5z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 12l9-5-9-5-9 5 9 5z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Personalized Learning Plans</h3>
+              <p class="mt-1 text-gray-400">
+                Customized courses to meet your specific needs.
+              </p>
+            </div>
+          </div>
+          <!-- Benefit 4 -->
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-blue-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 1.343-3 3 0 1.3.84 2.4 2 2.82V18l3-1 3 1v-4.18c1.16-.42 2-1.52 2-2.82 0-1.657-1.343-3-3-3h-4z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Affordable Pricing</h3>
+              <p class="mt-1 text-gray-400">
+                Quality education at competitive rates.
+              </p>
+            </div>
+          </div>
+          <!-- Benefit 5 -->
+          <div class="flex items-start space-x-4 md:col-span-3">
+            <div class="flex-shrink-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-blue-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Certificate Upon Completion</h3>
+              <p class="mt-1 text-gray-400">
+                Receive official certification after course completion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section id="courses" class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Courses</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Spoken English Course -->
+          <div
+            class="bg-gradient-to-br from-neutral-900 to-zinc-800 p-6 rounded-lg shadow-lg"
+          >
+            <h3 class="text-2xl font-bold mb-4">Spoken English Course</h3>
+            <ul class="space-y-2">
+              <li>Beginner, Intermediate, Advanced Levels</li>
+              <li>Live Sessions &amp; Practice Exercises</li>
+              <li>Group &amp; One-on-One Classes</li>
+            </ul>
+          </div>
+          <!-- Grammar Mastery Course -->
+          <div
+            class="bg-gradient-to-br from-neutral-900 to-zinc-800 p-6 rounded-lg shadow-lg"
+          >
+            <h3 class="text-2xl font-bold mb-4">Grammar Mastery Course</h3>
+            <ul class="space-y-2">
+              <li>Learn from Basic to Advanced Grammar</li>
+              <li>Interactive Exercises &amp; Quizzes</li>
+              <li>Practical Writing &amp; Speaking Applications</li>
+            </ul>
+          </div>
+          <!-- Special Courses -->
+          <div
+            class="bg-gradient-to-br from-neutral-900 to-zinc-800 p-6 rounded-lg shadow-lg"
+          >
+            <h3 class="text-2xl font-bold mb-4">Special Courses</h3>
+            <ul class="space-y-2">
+              <li>IELTS, Business English, Kids’ English, and more</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      id="testimonials"
+      class="py-16 bg-gradient-to-br from-neutral-900 to-zinc-900"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          What Our Students Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-gradient-to-br from-neutral-700 to-zinc-600 p-6 rounded-lg shadow-lg"
+          >
+            <div class="flex items-center space-x-4 mb-4">
+              <img
+                src="https://source.unsplash.com/80x80/?person"
+                alt="Student"
+                class="w-16 h-16 rounded-full"
+              />
+              <div>
+                <h4 class="text-xl font-bold">John Doe</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "The courses are amazing and have truly boosted my confidence in
+              speaking English!"
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-gradient-to-br from-neutral-700 to-zinc-600 p-6 rounded-lg shadow-lg"
+          >
+            <div class="flex items-center space-x-4 mb-4">
+              <img
+                src="https://source.unsplash.com/81x81/?person"
+                alt="Student"
+                class="w-16 h-16 rounded-full"
+              />
+              <div>
+                <h4 class="text-xl font-bold">Jane Smith</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-300">
+              "I improved my grammar and communication skills significantly with
+              their expert guidance."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Frequently Asked Questions
+        </h2>
+        <div class="space-y-4">
+          <div
+            class="bg-gradient-to-br from-neutral-700 to-zinc-700 p-4 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold">
+              How long does the course take?
+            </h3>
+            <p class="bg-gradient-to-br from-neutral-700 to-zinc-700 mt-2">
+              The duration varies depending on the course level, but most
+              courses range from 3 to 6 months.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-neutral-700 to-zinc-700 p-4 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold">What are the fees?</h3>
+            <p class="text-gray-300 mt-2">
+              Our pricing is competitive and varies with the course type and
+              duration. Contact us for more details.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-neutral-700 to-zinc-700 p-4 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold">Do you provide certificates?</h3>
+            <p class="text-gray-300 mt-2">
+              Yes, we provide official certificates upon successful completion
+              of each course.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <!-- Contact Information Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-br from-neutral-900 to-zinc-900 text-gray-200"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-extrabold text-center mb-12 tracking-tight">
+          Get in Touch
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Contact Details Card -->
+          <div
+            class="bg-gray-800 bg-opacity-70 p-8 rounded-xl shadow-lg space-y-6"
+          >
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-phone-alt text-blue-500 text-2xl"></i>
+              <span class="text-lg">+94 123 456 789</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-envelope text-blue-500 text-2xl"></i>
+              <span class="text-lg">info@zelkinniya.lk</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <i class="fab fa-whatsapp text-blue-500 text-2xl"></i>
+              <span class="text-lg">WhatsApp Us</span>
+            </div>
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-map-marker-alt text-blue-500 text-2xl"></i>
+              <span class="text-lg">
+                Rahmaniya Street, Kinniyai, Sri Lanka
+              </span>
+            </div>
+          </div>
+          <!-- Social Media Links Card -->
+          <div class="flex flex-col justify-center items-center">
+            <p class="text-xl font-medium mb-6">
+              Connect with us on social media
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="p-4 bg-gray-800 bg-opacity-70 rounded-full shadow-md transform hover:scale-110 transition duration-300"
+              >
+                <i class="fab fa-facebook text-blue-500 text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="p-4 bg-gray-800 bg-opacity-70 rounded-full shadow-md transform hover:scale-110 transition duration-300"
+              >
+                <i class="fab fa-twitter text-blue-500 text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="p-4 bg-gray-800 bg-opacity-70 rounded-full shadow-md transform hover:scale-110 transition duration-300"
+              >
+                <i class="fab fa-instagram text-blue-500 text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="p-4 bg-gray-800 bg-opacity-70 rounded-full shadow-md transform hover:scale-110 transition duration-300"
+              >
+                <i class="fab fa-linkedin-in text-blue-500 text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / Resources Section -->
+    <section id="blog" class="py-16">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          Resources &amp; Blog
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Blog Post 1 -->
+          <div
+            class="bg-gradient-to-br from-neutral-900 to-zinc-800 p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="https://source.unsplash.com/600x400/?education,books"
+              alt="Blog Post 1"
+              class="rounded-lg mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2">
+              10 Tips to Improve Your English
+            </h3>
+            <p class="text-gray-300">
+              Discover simple techniques to boost your language skills.
+            </p>
+            <a href="#" class="mt-4 inline-block text-blue-500 hover:underline"
+              >Read More</a
+            >
+          </div>
+          <!-- Blog Post 2 -->
+          <div
+            class="bg-gradient-to-br from-neutral-900 to-zinc-800 p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="https://source.unsplash.com/600x400/?classroom,learning"
+              alt="Blog Post 2"
+              class="rounded-lg mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2">
+              Mastering Grammar: A Comprehensive Guide
+            </h3>
+            <p class="text-gray-300">
+              Learn the fundamentals and advanced tips for perfect grammar.
+            </p>
+            <a href="#" class="mt-4 inline-block text-blue-500 hover:underline"
+              >Read More</a
+            >
+          </div>
+          <!-- Blog Post 3 -->
+          <div
+            class="bg-gradient-to-br from-neutral-900 to-zinc-800 p-6 rounded-lg shadow-lg"
+          >
+            <img
+              src="https://source.unsplash.com/600x400/?online,course"
+              alt="Blog Post 3"
+              class="rounded-lg mb-4"
+            />
+            <h3 class="text-2xl font-bold mb-2">
+              The Benefits of Online Learning
+            </h3>
+            <p class="text-gray-300">
+              Explore how digital platforms can revolutionize your learning
+              experience.
+            </p>
+            <a href="#" class="mt-4 inline-block text-blue-500 hover:underline"
+              >Read More</a
+            >
+          </div>
+        </div>
+        <!-- See More Button -->
+        <div class="text-center mt-8">
+          <a
+            href="blog.html"
+            class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-lg"
+            >See More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-neutral-800 to-zinc-600 py-8">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="mb-4 md:mb-0">
+          <a href="#hero" class="text-2xl font-bold">ZEL KINNIYA</a>
+        </div>
+        <div class="mb-4 md:mb-0">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#about" class="hover:text-gray-400">About Us</a>
+            </li>
+            <li>
+              <a href="#courses" class="hover:text-gray-400">Courses</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400">Terms &amp; Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#" class="hover:text-gray-400">
+                <i class="fab fa-facebook text-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400">
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400">
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400">
+                <i class="fab fa-linkedin text-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>© 2024 ZEL Kinniya. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
